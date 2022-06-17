@@ -1,0 +1,24 @@
+{
+  "name": "firebase-cloud-funciton",
+  "version": "1.0.0",
+  "description": "파이어 베이스는 서버가 없고 클라이언트에서 대부분의 요청이 이루어지지만 백엔드 환경에서만 작성 가능한 코드를 아예 쓰지 못하는 건 아니다.\r 구글 클라우드의 이벤트 기반 서버리스 프레임워크인 cloud function을 사용하면 node js 환경에서 실행 가능한 타사 API 라던지 자사의 REST API도 제작할 수 있다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangta69/firebase-cloud-funciton.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wangta69/firebase-cloud-funciton/issues"
+  },
+  "homepage": "https://github.com/wangta69/firebase-cloud-funciton#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "firebase-admin": "^11.0.0",
+    "firebase-functions": "^3.21.2"
+  }
+}

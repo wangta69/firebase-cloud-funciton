@@ -10,5 +10,36 @@ AWS에 익숙하다면 Lambda랑 유사한 기능이라고 보면 되겠다.
 ```
 npm install firebase-functions@latest firebase-admin@latest --save // functions
 npm install -g firebase-tools // 파이어베이스 cli
-출처: https://mingeesuh.tistory.com/entry/Firebase-웹-Cloud-Function이란-초기-세팅하기 [코딩마차:티스토리]
+```
+아직 파이어베이스 로그인이 되어있지 않다면 프로젝트 터미널에서 로그인을 해주자 (브라우저에서 로그인 창이 뜸)
+```
+firebase login
+
+```
+
+현재 프로젝트 디렉토리 루트에서 클라우드 함수를 사용할 수 있도록 초기화를 해주자
+```
+firebase init functions
+```
+이렇게 하면 functions 라는 디렉토리가 생성되고 관련 프로그램이 보일 것이다.
+이곳에서 index.js에 프로그램 하면 된다.
+
+프로그램이 완료되면 배포는
+```
+firebase deploy --only functions
+```
+특정함수만 배포하고하면
+```
+firebase deploy --only functions:[function 이름]
+```
+
+돈내라는 얘기
+```
+Error: Your project game-1acce must be on the Blaze (pay-as-you-go) plan to complete this command. Required API cloudbuild.googleapis.com can't be enabled until the upgrade is complete. To upgrade, visit the following URL:
+```
+
+
+#cors 처리
+```
+npm i cors
 ```
