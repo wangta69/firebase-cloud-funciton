@@ -4,6 +4,7 @@ const cors = require("cors")({origin: true});
 
 exports.fn = functions.https.onRequest((req, res) => {
   cors(req, res, () => {
+    res.status(200).send();
     // your function body here - use the provided req and res from cors
   });
 });
